@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Course04 License Lab</string>
+    <string name="lic_bad">卡密无效</string>
+    <string name="lic_ok">卡密有效：userId=%1$d，有效期偏移=%2$d 天</string>
+</resources>
