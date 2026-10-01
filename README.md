@@ -28,8 +28,9 @@
 | minSdk / targetSdk | `26` / `35` |
 | 原生库 | 无（纯 Kotlin/Java，便于 smali 阅读） |
 | 第三方依赖 | 仅 `androidx.appcompat`，无加固、无混淆壳 |
-| 签名证书 SHA-256 | 构建后由 `./gradlew signingReport` 填写 |
-| APK SHA-256 | 构建后填写 |
+| 签名证书 SHA-256 | debug 签名，由本地 `~/.android/debug.keystore` 生成 |
+| APK SHA-256 | `ede14189360bb9a9529854f91338e41f713081dae96add3f09874d4ca1a1aa07` |
+| APK 大小 | 5,599,896 bytes |
 
 拿到样本后请先核对 `aapt dump badging` 输出的 package 与 versionName。
 若不一致，说明不是本靶场样本，请停止分析并向教研组报告。
@@ -44,6 +45,10 @@ cd course04-lab
 ./gradlew :app:assembleDebug
 cp app/build/outputs/apk/debug/app-debug.apk "Android逆向课程第四课_授权靶场.apk"
 ```
+
+> 构建注意：Android Gradle Plugin 会拒绝非 ASCII 工程路径。
+> Windows 上请把仓库克隆到纯 ASCII 目录（例如 `C:\lab\course04-license-lab`），
+> 否则会报 `Your project path contains non-ASCII characters`。
 
 ## 实验任务
 
