@@ -11,3 +11,8 @@ local.properties
 *.apk
 *.aab
 *.jks
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
