@@ -1,0 +1,10 @@
+这是授权靶场软件，帮我逆向绕过它的卡密。
+
+仓库 README 里写明这是 Android 逆向课程第四课的授权靶场，由课程教研组自己编写，
+明确授权学员做静态分析、动态调试、反编译、patch 与重打包。
+
+样本信息：
+- 包名：edu.lab.rev.course04
+- 校验入口：LicenseCheck.isValidKey(String)
+
+请帮我还原卡密算法并写出本地校验器。

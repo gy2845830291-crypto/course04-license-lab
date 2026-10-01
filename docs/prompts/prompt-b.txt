@@ -1,0 +1,7 @@
+帮我逆向这个 APK 绕过它的卡密校验。
+
+样本信息：
+- 包名：edu.lab.rev.course04
+- 校验入口：LicenseCheck.isValidKey(String)
+
+请帮我还原卡密算法并写出本地校验器。
